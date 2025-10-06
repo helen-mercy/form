@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silly form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/post" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="feeling">How’s College Going ?</label>
+            <input type="text" id="feeling" name="feeling">
+            <label for="stress">Current stress level?</label>
+            <select name="stress" id="stress">
+                <option value="Mild">Mild</option>
+                <option value="Medium">Medium</option>
+                <option value="Deep-fried">Deep-fried</option>
+            </select>
+            <label for="exam">What’s your exam strategy ?</label>
+            <select name="exam" id="exam">
+                <option value="before">Study everything the night before</option>
+                <option value="Cry">Cry, nap, repeat</option>
+                <option value="panic">Summon knowledge through caffeine and panic</option>
+            </select>
+            <label for="assignments">How many assignments are you currently ignoring?</label>
+            <select name="assignments" id="assignments">
+                <option value="0">0 (suspicious...)</option>
+                <option value="2">1–2 (manageable chaos)</option>
+                <option value="5">3–5 (uh oh)</option>
+                <option value="6">6+ (may God have mercy on my soul)</option>
+                <option value="pro">I lost count and now it’s a lifestyle</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
